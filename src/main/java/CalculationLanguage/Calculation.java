@@ -28,7 +28,7 @@ public class Calculation {
     /**
      * @param texts 값을 받아욤
      * @return 계산하여 값을 반환
-     */
+    */
     public long calculation(String texts) {
         long total;
         String[] text = texts.split(multiply);
