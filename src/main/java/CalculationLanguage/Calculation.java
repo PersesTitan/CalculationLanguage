@@ -1,5 +1,6 @@
 package CalculationLanguage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,9 +17,9 @@ public class Calculation {
      * @param minus 빼기 설정
      * @param multiply 곱하기 설정
      */
-    public Calculation (String plus, String minus, String multiply) {
+    public Calculation (String plus, String minus, String multiply) throws IOException {
         boolean bool = plus.equals(minus) || plus.equals(multiply) || minus.equals(multiply);
-        if (bool)
+        if (bool) throw new IOException("같은 값이 존재하면 안됩니다");
         this.plus = plus;
         this.minus = minus;
         this.multiply = multiply;
