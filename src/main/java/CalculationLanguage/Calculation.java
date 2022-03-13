@@ -18,6 +18,7 @@ public class Calculation {
      */
     public Calculation (String plus, String minus, String multiply) {
         boolean bool = plus.equals(minus) || plus.equals(multiply) || minus.equals(multiply);
+        if (bool)
         this.plus = plus;
         this.minus = minus;
         this.multiply = multiply;
