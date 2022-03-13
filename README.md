@@ -19,7 +19,7 @@
 ```java
 엄랭 기준으로 예시를 작성하였습니다.
 
-setSign(".", ",", " ");
+Calculation calculation = new Calculation(".", ",", " ");
 
 ```
 
