@@ -11,6 +11,7 @@ public class Calculation {
 
     public Calculation() {}
 
+
     public Calculation (String plus, String minus, String multiply) {
         this.plus = plus;
         this.minus = minus;
