@@ -17,7 +17,7 @@ public class Calculation {
      * @param multiply 곱하기 설정
      */
     public Calculation (String plus, String minus, String multiply) {
-        boolean bool = plus.equals(minus);
+        boolean bool = plus.equals(minus) || plus.equals(multiply);
         this.plus = plus;
         this.minus = minus;
         this.multiply = multiply;
