@@ -39,3 +39,4 @@ long value = calculation(text);
 
 # 버전
   1. 2022/5/1 V1 - setSign, calculation 추가
+  2. 2022/5/4 V2 - 생성자로 변경
