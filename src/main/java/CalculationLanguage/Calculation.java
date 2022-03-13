@@ -11,8 +11,13 @@ public class Calculation {
 
     public Calculation() {}
 
-
+    /**
+     * @param plus 더하기 설정
+     * @param minus 빼기 설정
+     * @param multiply 곱하기 설정
+     */
     public Calculation (String plus, String minus, String multiply) {
+        boolean bool = plus.equals(minus);
         this.plus = plus;
         this.minus = minus;
         this.multiply = multiply;
