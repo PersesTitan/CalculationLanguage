@@ -1,23 +1,23 @@
 package CalculationLanguage;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Calculation {
 
-    public static String plus = "+";
-    public static String minus = "-";
-    public static String multiply = "\\*";
+    private String plus = "+";
+    private String minus = "-";
+    private String multiply = "\\*";
 
-    public static void setSign(String plus, String minus, String multiply) {
-        Calculation.plus = plus;
-        Calculation.minus = minus;
-        Calculation.multiply = multiply;
+    public Calculation() {}
+
+    public Calculation (String plus, String minus, String multiply) {
+        this.plus = plus;
+        this.minus = minus;
+        this.multiply = multiply;
     }
 
-    public static long calculation(String texts) {
+    public long calculation(String texts) {
         long total;
         String[] text = texts.split(multiply);
         List<Integer> list = new ArrayList<>();
