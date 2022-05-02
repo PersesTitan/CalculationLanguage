@@ -9,7 +9,7 @@
 # 사용법
 라이브러리 들어가서 jar파일을 추가해 주세요.
 
-## setSign(plus, minus, multiply)
+## setSign(String plus, String minus, String multiply)
 설명 : 처음 기호를 등록하는 메소드 입니다.</br>
 리턴 타입 : void</br>
   * plus = 1이 더해지는 기호 (기본 값 : +)
@@ -23,7 +23,7 @@ setSign(".", ",", " ");
 
 ```
 
-## calculation(texts)
+## calculation(String texts)
 설명 : 계산된 값이 리턴 됩니다.</br>
 리턴 타입 : long</br>
   * texts = 계산전 값을 넣으면 계산된 값이 출력됩니다.
